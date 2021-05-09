@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Galerija</title>
+</head>
+
+<body>
+
+
+    <div class="overlay2"></div>
+    <section class="showcase1">
+        <video src="cookieHouse.mp4.mp4" loop muted autoplay></video>
+        <header class="head2">
+            <h1>Pogledajte Nase Ranije Radove</h1>
+        </header>
+        <div class="content">
+            <div>
+                <img src="/strumf.jpg" id="imgClickAndChange" onClick="changeImage()" usemap="#SUB15">
+                <h4>Novogodisnji medenjaci</h4>
+            </div>
+        </div>
+        <footer class="footer">
+            <h1>&copy; Copyright 2018, Example Corporation </h1>
+        </footer>
+    </section>
+
+    <script>
+        var counter = 1;
+
+        imgClickAndChange.onclick = function () {
+
+            if (counter == 0) {
+                document.getElementById("imgClickAndChange").src = "/strumf.jpg";
+                counter++;
+            }
+            else if (counter == 1) {
+                document.getElementById("imgClickAndChange").src = "/delfini.jpg";
+                counter++;
+            }
+            else if (counter == 2) {
+                document.getElementById("imgClickAndChange").src = "/novogodisnje.jpg";
+                counter = 0;
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>

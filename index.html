@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Kuca Medenjaka NS</title>
+</head>
+
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Kuca Medenjaka NS</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="cookieHouse.mp4.mp4" loop muted autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Ulepsaj Dan</h2>
+      <h3>Pokloni Nekom</h3>
+      <p>
+        Razlicite vrste medenjaka sa razlicitim temama, rucno napravljeni za vase najmilije. Istrazi galeriju ili naruci
+        medenjak po svojoj temi ili slici
+      </p>
+      <a href="/galerija.html">Istrazi galeriju </a>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="facebook.png.png" alt="" /></a></li>
+      <li><a href="#"><img src="twitter.png.png" alt="" /></a></li>
+      <li><a href="#"><img src="instagram.png.png" alt="" /></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="/galerija.html">Galerija</a></li>
+      <li><a href="#">Kontakt</a></li>
+      <li><a href="#">O nama</a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active')
+      showcase.classList.toggle('active')
+    })
+  </script>
+</body>
+
+</html>
